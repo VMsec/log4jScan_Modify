@@ -4,14 +4,9 @@
 ![](https://dkh9ehwkisc4.cloudfront.net/static/files/80e52a5b-7d72-44c2-8187-76a2a58f5657-demo.png)
 
 
-# Features
+# python3 log4j-scan.py -l all_active_webs.txt --run-all-tests  --waf-bypass --custom-dns-callback-host 1.1.1.1:1389
 
-- Support for lists of URLs.
-- Fuzzing for more than 60 HTTP request headers (not only 3-4 headers as previously seen tools).
-- Fuzzing for HTTP POST Data parameters.
-- Fuzzing for JSON data parameters.
-- Supports DNS callback for vulnerability discovery and validation.
-- WAF Bypass payloads.
+
 
 ---
 # 🚨 Announcement
