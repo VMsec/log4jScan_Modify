@@ -3,13 +3,38 @@
 
 ![](https://dkh9ehwkisc4.cloudfront.net/static/files/80e52a5b-7d72-44c2-8187-76a2a58f5657-demo.png)
 
+# 🚨 免责声明
 
-# python3 log4j-scan.py -l all_active_webs.txt --run-all-tests  --waf-bypass --custom-dns-callback-host 1.1.1.1:1389
+本项目仅面向合法授权的企业安全建设行为，在使用本项目进行检测时，您应确保该行为符合当地的法律法规，并且已经取得了足够的授权。
 
+如您在使用本项目的过程中存在任何非法行为，您需自行承担相应后果，我们将不承担任何法律及连带责任。
 
+在使用本项目前，请您务必审慎阅读、充分理解各条款内容，限制、免责条款或者其他涉及您重大权益的条款可能会以加粗、加下划线等形式提示您重点注意。
+
+除非您已充分阅读、完全理解并接受本协议所有条款，否则，请您不要使用本项目。
+
+您的使用行为或者您以其他任何明示或者默示方式表示接受本协议的，即视为您已阅读并同意本协议的约束。
+
+# 修改
+
+payload的拼接逻辑
+
+修改为多线程发包
+
+只使用ldap监听器记录，放弃了dnslog验证（为了效率）
+
+# 使用
+
+```
+python3 log4j-scan.py -l all_active_webs.txt --run-all-tests  --waf-bypass --custom-dns-callback-host 1.1.1.1:1389
+```
+
+# 设置监听
+
+参考：https://github.com/r00tSe7en/JNDIMonitor
 
 ---
-# 🚨 Announcement
+# Announcement
 
 There is a patch bypass on Log4J v2.15.0 that allows a full RCE. FullHunt added community support for log4j-scan to reliably detect CVE-2021-45046. If you're having difficulty discovering and scanning your infrastructure at scale or keeping up with the Log4J threat, please get in touch at (team@fullhunt.io).
 
